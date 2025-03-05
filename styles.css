@@ -1,0 +1,147 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+h1 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Controls Container */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Labels & Select Dropdown */
+label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+select, input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #ff6b6b;
+    color: white;
+}
+
+button:hover {
+    background-color: #ff4747;
+    transform: scale(1.05);
+}
+.speed{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* Speed Slider */
+input[type="range"] {
+    width: 120px;
+    margin-left: 5px;
+}
+
+/* Array Container */
+#array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 350px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Individual Array Bars */
+.bar {
+    width: 4%;
+    margin: 2px;
+    background-color: #00adb5;
+    transition: height 0.2s ease-in-out;
+}
+
+/* Sorting Animation Colors */
+.bar.sorted {
+    background-color: #f8b400;
+}
+.bar.comparing {
+    background-color: #ff6b6b;
+}
+.bar.swapping {
+    background-color: #4caf50;
+}
+
+/* Complexity Section */
+.complexity-section {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    display:none;
+}
+
+.complexity-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #f8b400;
+}
+
+.complexity-section p {
+    font-size: 1rem;
+    margin: 5px 0;
+    font-weight: 500;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+    }
+
+    #array-container {
+        width: 90%;
+        height: 300px;
+    }
+
+    button {
+        width: 80%;
+    }
+}
